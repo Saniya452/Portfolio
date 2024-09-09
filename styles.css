@@ -175,6 +175,10 @@ section#projects {
     transition: width 0.3s ease-in-out; /* Smooth transition */
 }
 
+.js-projects ul li a:hover {
+    color: rgb(233, 125, 125); /* Change text color on hover */
+}
+
 .js-projects ul li a:hover::after {
     width: 100%; /* Line width expands to full width on hover */
 }
