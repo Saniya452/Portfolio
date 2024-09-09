@@ -176,7 +176,7 @@ section#projects {
 }
 
 .js-projects ul li a:hover {
-    color: rgb(233, 125, 125); /* Change text color on hover */
+    color: white; /* Change text color on hover */
 }
 
 .js-projects ul li a:hover::after {
