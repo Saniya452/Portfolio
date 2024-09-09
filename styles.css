@@ -159,12 +159,24 @@ section#projects {
     text-decoration: none;
     background-color: transparent;
     padding: 0;
+    position: relative;
     transition: color 0.3s ease-in-out;
 }
 
-.js-projects ul li a:hover {
-    color: rgb(233, 125, 125);
-    text-decoration: underline;
+.js-projects ul li a::after {
+    content: ""; /* Empty content */
+    display: block;
+    width: 0; /* Initial width is 0 */
+    height: 2px; /* Line thickness */
+    background: rgb(233, 125, 125); /* Line color */
+    position: absolute;
+    bottom: -2px; /* Position below the text */
+    left: 0;
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+}
+
+.js-projects ul li a:hover::after {
+    width: 100%; /* Line width expands to full width on hover */
 }
 
 
