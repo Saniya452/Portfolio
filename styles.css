@@ -153,7 +153,7 @@ section#projects {
     font-size: 1.2rem;
 }
 
-/* Remove button-like appearance from small JS projects links */
+/* JS projects links */
 .js-projects ul li a {
     color: brown;
     text-decoration: none;
@@ -163,7 +163,7 @@ section#projects {
 }
 
 .js-projects ul li a:hover {
-    color: rgb(194, 68, 68);
+    color: rgb(233, 125, 125);
     text-decoration: underline;
 }
 
