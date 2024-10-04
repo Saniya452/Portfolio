@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sania Ahmed - React Native Developer Portfolio" />
+    <meta name="keywords" content="React Native Developer, Mobile Development, Portfolio, Sania Ahmed" />
+    <meta name="author" content="Sania Ahmed" />
     <title>Sania Ahmed - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -24,15 +24,11 @@
     </header>
 
     <section id="home">
-      <h2>ABOUT ME</h2>
+      <h2>About Me</h2>
       <p>
-        I'm a dedicated React Native Developer with a strong focus on building
-        innovative mobile apps for Android and iOS.<br />
-        Continuously learning and staying updated with industry trends, I'm
-        always exploring new tools and techniques to enhance my development
-        process.<br />
-        I thrive on collaboration and love turning complex ideas into
-        functional, impactful solutions.<br />
+        I'm a dedicated React Native Developer with a passion for building 
+        innovative mobile apps for Android and iOS. Always exploring new tools 
+        and techniques to enhance my development process and deliver impactful solutions.
       </p>
     </section>
 
@@ -41,18 +37,14 @@
 
       <div class="project">
         <h3>Traveling</h3>
-        <p>A comprehensive travel app designed to help tourists discover must-visit destinations.</p>
-        <a href="https://github.com/Saniya452/TravelingApp.git" class="project-btn"
-          >View Project</a
-        >
+        <p>A travel app designed to help tourists discover must-visit destinations.</p>
+        <a href="https://github.com/Saniya452/TravelingApp.git" class="project-btn">View Project</a>
       </div>
 
       <div class="project">
         <h3>Recipes</h3>
-        <p>A beautiful app for managing and viewing recipes with a smooth UI.</p>
-        <a href="https://github.com/Saniya452/Recipe-App.git" class="project-btn"
-          >View Project</a
-        >
+        <p>An app for managing and viewing recipes with a user-friendly UI.</p>
+        <a href="https://github.com/Saniya452/Recipe-App.git" class="project-btn">View Project</a>
       </div>
 
       <div class="project">
@@ -63,7 +55,7 @@
 
       <div class="project">
         <h3>My Goals</h3>
-        <p>A basic task management app for daily goals and targets, built with Expo CLI.</p>
+        <p>A basic task management app for daily goals, built with Expo CLI.</p>
         <a href="https://github.com/Saniya452/Goals-App.git" class="project-btn">View Project</a>
       </div>
     </section>
@@ -80,13 +72,11 @@
 
     <section id="contact">
       <h2>Contact Me</h2>
-      <p>Email: ahmedsania198@gmail.com</p>
-      <p>Phone: +923301375508</p>
+      <p>Email: <a href="mailto:ahmedsania198@gmail.com">ahmedsania198@gmail.com</a></p>
+      <p>Phone: <a href="tel:+923301375508">+923301375508</a></p>
       <p>
         LinkedIn:
-        <a href="https://pk.linkedin.com/in/sania-ahmed-4031ba229" target="_blank"
-          >LinkedIn Profile</a
-        >
+        <a href="https://pk.linkedin.com/in/sania-ahmed-4031ba229" target="_blank">LinkedIn Profile</a>
       </p>
       <p>
         GitHub:
@@ -95,8 +85,20 @@
     </section>
 
     <footer>
-      <p>&copy; 2024 SaniaAhmed.Dev</p>
+      <p>&copy; 2024 Sania Ahmed</p>
     </footer>
+
+    <script>
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
   </body>
 </html>
 
